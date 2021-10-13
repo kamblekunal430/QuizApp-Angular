@@ -1,5 +1,8 @@
 # QuizAppAngular
 
+The Online Test Application system using Angular enables users to provide online tests, review them, and display the results.
+We are using json-server as backend as of now.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
 ## Development server
