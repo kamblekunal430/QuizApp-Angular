@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <h1 class="bg-light text-center p-2">{{ quizname }}</h1>
+
+  <div
+    *ngFor="let ques of questions; let i = index"
+    class="card w-75 mx-auto my-4"
+  >
+    <div class="card-header" style="background-color: darkgray">
+      <b> Question {{ i + 1 }}. {{ ques.que }}</b>
+    </div>
+    <div class="card-body bg-light">
+      <div *ngFor="let opt of ques.options" class="mb-3">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            value="{{ opt.isAns }}"
+            name="{{ ques.id }}"
+            id="{{ opt.id }}"
+          />
+          <label class="form-check-label" for="{{ opt.id }}">
+            {{ opt.op }}
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

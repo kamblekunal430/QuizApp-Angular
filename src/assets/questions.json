@@ -1,0 +1,84 @@
+{
+  "id": 1,
+  "quizname": "Javascript Quiz",
+  "questions": [
+    {
+      "id": 1000,
+      "que": "What is my name",
+      "options": [
+        {
+          "id": 101,
+          "op": "Kunal",
+          "isAns": true
+        },
+        {
+          "id": 102,
+          "op": "Sakshi",
+          "isAns": false
+        },
+        {
+          "id": 103,
+          "op": "Nilesh",
+          "isAns": false
+        },
+        {
+          "id": 104,
+          "op": "Anshul",
+          "isAns": false
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "que": "What is my hometown",
+      "options": [
+        {
+          "id": 105,
+          "op": "Durgapur",
+          "isAns": true
+        },
+        {
+          "id": 106,
+          "op": "Chandrapur",
+          "isAns": false
+        },
+        {
+          "id": 107,
+          "op": "Nagpur",
+          "isAns": false
+        },
+        {
+          "id": 108,
+          "op": "Amravati",
+          "isAns": false
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "que": "What is my hometown",
+      "options": [
+        {
+          "id": 109,
+          "op": "Durgapur",
+          "isAns": true
+        },
+        {
+          "id": 110,
+          "op": "Chandrapur",
+          "isAns": false
+        },
+        {
+          "id": 111,
+          "op": "Nagpur",
+          "isAns": false
+        },
+        {
+          "id": 112,
+          "op": "Amravati",
+          "isAns": false
+        }
+      ]
+    }
+  ]
+}
