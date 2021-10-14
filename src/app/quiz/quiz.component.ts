@@ -10,22 +10,26 @@ export class QuizComponent implements OnInit {
   questions = queFile.questions;
   response: any = {};
   result: any = {};
-  showReview: any = false;
+  displayResult: boolean = false;
+  disable = false;
+
+  submitQuiz() {
+    if (this.questions.length == Object.keys(this.result).length) {
+      if (confirm('Confirm Submit Test!!!')) {
+        this.displayResult = true;
+        this.disable = true;
+      }
+    } else {
+      alert('Attempt all the Questions!!!');
+    }
+  }
 
   setAnswer(queid: any, ans: any) {
     this.response[queid] = 'answered';
     this.result[queid] = ans;
-    console.log(this.response, this.result);
   }
 
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(queFile);
-    this.questions.forEach((que) => {
-      que.options.forEach((opt) => {
-        console.log(opt);
-      });
-    });
-  }
+  ngOnInit(): void {}
 }

@@ -18,11 +18,21 @@
             name="{{ opt.queid }}"
             id="{{ opt.id }}"
             (click)="setAnswer(opt.queid, opt.isAns)"
+            [disabled]="disable"
           />
           <label class="form-check-label" for="{{ opt.id }}">
             {{ opt.ansopt }}
           </label>
         </div>
+      </div>
+      <div
+        *ngIf="displayResult"
+        class=" alert {{
+          result[ques.id] ? 'alert-success' : 'alert-danger'
+        }}  p-1 m-1"
+      >
+        Your answer is
+        {{ result[ques.id] ? "Correct" : "Wrong" }}
       </div>
     </div>
   </div>
@@ -33,10 +43,10 @@
       class="btn btn-primary m-4"
       data-bs-toggle="modal"
       data-bs-target="#reviewModal"
+      [disabled]="disable"
     >
-      Review
+      Review & Submit
     </button>
-    <button type="button" class="btn btn-success m-4">Submit</button>
   </div>
 
   <!-- Modal -->
@@ -79,7 +89,14 @@
           >
             Close
           </button>
-          <button type="button" class="btn btn-success">Submit</button>
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-dismiss="modal"
+            (click)="submitQuiz()"
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
