@@ -4,78 +4,90 @@
   "questions": [
     {
       "id": 1000,
-      "que": "What is my name",
+      "quename": "What is my name",
       "options": [
         {
           "id": 101,
-          "op": "Kunal",
+          "queid": 1000,
+          "ansopt": "Kunal",
           "isAns": true
         },
         {
           "id": 102,
-          "op": "Sakshi",
+          "queid": 1000,
+          "ansopt": "Sakshi",
           "isAns": false
         },
         {
           "id": 103,
-          "op": "Nilesh",
+          "queid": 1000,
+          "ansopt": "Nilesh",
           "isAns": false
         },
         {
           "id": 104,
-          "op": "Anshul",
+          "queid": 1000,
+          "ansopt": "Anshul",
           "isAns": false
         }
       ]
     },
     {
       "id": 1002,
-      "que": "What is my hometown",
+      "quename": "What is my hometown",
       "options": [
         {
           "id": 105,
-          "op": "Durgapur",
+          "queid": 1002,
+          "ansopt": "Durgapur",
           "isAns": true
         },
         {
           "id": 106,
-          "op": "Chandrapur",
+          "queid": 1002,
+          "ansopt": "Chandrapur",
           "isAns": false
         },
         {
           "id": 107,
-          "op": "Nagpur",
+          "queid": 1002,
+          "ansopt": "Nagpur",
           "isAns": false
         },
         {
           "id": 108,
-          "op": "Amravati",
+          "queid": 1002,
+          "ansopt": "Amravati",
           "isAns": false
         }
       ]
     },
     {
       "id": 1003,
-      "que": "What is my hometown",
+      "quename": "What is my hometown",
       "options": [
         {
           "id": 109,
-          "op": "Durgapur",
+          "queid": 1003,
+          "ansopt": "Durgapur",
           "isAns": true
         },
         {
           "id": 110,
-          "op": "Chandrapur",
+          "queid": 1003,
+          "ansopt": "Chandrapur",
           "isAns": false
         },
         {
           "id": 111,
-          "op": "Nagpur",
+          "queid": 1003,
+          "ansopt": "Nagpur",
           "isAns": false
         },
         {
           "id": 112,
-          "op": "Amravati",
+          "queid": 1003,
+          "ansopt": "Amravati",
           "isAns": false
         }
       ]

@@ -6,7 +6,7 @@
     class="card w-75 mx-auto my-4"
   >
     <div class="card-header" style="background-color: darkgray">
-      <b> Question {{ i + 1 }}. {{ ques.que }}</b>
+      <b> Question {{ i + 1 }}. {{ ques.quename }}</b>
     </div>
     <div class="card-body bg-light">
       <div *ngFor="let opt of ques.options" class="mb-3">
@@ -15,12 +15,71 @@
             class="form-check-input"
             type="radio"
             value="{{ opt.isAns }}"
-            name="{{ ques.id }}"
+            name="{{ opt.queid }}"
             id="{{ opt.id }}"
+            (click)="setAnswer(opt.queid, opt.isAns)"
           />
           <label class="form-check-label" for="{{ opt.id }}">
-            {{ opt.op }}
+            {{ opt.ansopt }}
           </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <!--Button to trigger Modal-->
+    <button
+      type="button"
+      class="btn btn-primary m-4"
+      data-bs-toggle="modal"
+      data-bs-target="#reviewModal"
+    >
+      Review
+    </button>
+    <button type="button" class="btn btn-success m-4">Submit</button>
+  </div>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="reviewModal"
+    tabindex="-1"
+    aria-labelledby="reviewModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel">Quiz Review</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="row row-cols-2">
+            <div
+              *ngFor="let que of questions; let i = index"
+              class="col-4 alert {{
+                response[que.id] ? 'alert-success' : 'alert-danger'
+              }}  p-1 m-1"
+            >
+              Q. {{ i + 1 }} &nbsp;
+              {{ response[que.id] ? "Answered" : "Not Answered" }}
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-success">Submit</button>
         </div>
       </div>
     </div>
