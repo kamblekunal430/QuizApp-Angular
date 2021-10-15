@@ -4,90 +4,185 @@
   "questions": [
     {
       "id": 1000,
-      "quename": "What is my name",
+      "quename": "Which HTML tag do we use to put the JavaScript?",
       "options": [
         {
           "id": 101,
           "queid": 1000,
-          "ansopt": "Kunal",
-          "isAns": true
+          "ansopt": "<javascript>",
+          "isAns": false
         },
         {
           "id": 102,
           "queid": 1000,
-          "ansopt": "Sakshi",
-          "isAns": false
+          "ansopt": "<script>",
+          "isAns": true
         },
         {
           "id": 103,
           "queid": 1000,
-          "ansopt": "Nilesh",
+          "ansopt": "<js>",
           "isAns": false
         },
         {
           "id": 104,
           "queid": 1000,
-          "ansopt": "Anshul",
+          "ansopt": "None of the above",
           "isAns": false
         }
       ]
     },
+
+    {
+      "id": 1001,
+      "quename": "Which built-in method calls a function for each element in the array?",
+
+      "options": [
+        {
+          "id": 1055,
+          "queid": 1001,
+          "ansopt": "while()",
+          "isAns": false
+        },
+        {
+          "id": 1057,
+          "queid": 1001,
+          "ansopt": "loop",
+          "isAns": false
+        },
+        {
+          "id": 1056,
+          "queid": 1001,
+          "ansopt": "forEach",
+          "isAns": true
+        },
+        {
+          "id": 1058,
+          "queid": 1001,
+          "ansopt": "takeUntil",
+          "isAns": false
+        }
+      ]
+    },
+
     {
       "id": 1002,
-      "quename": "What is my hometown",
+      "quename": "What is the difference between let and var?",
       "options": [
         {
           "id": 105,
           "queid": 1002,
-          "ansopt": "Durgapur",
+          "ansopt": "let has local scope",
           "isAns": true
         },
         {
           "id": 106,
           "queid": 1002,
-          "ansopt": "Chandrapur",
+          "ansopt": "both are same",
           "isAns": false
         },
         {
           "id": 107,
           "queid": 1002,
-          "ansopt": "Nagpur",
+          "ansopt": "var is new data type",
           "isAns": false
         },
         {
           "id": 108,
           "queid": 1002,
-          "ansopt": "Amravati",
+          "ansopt": "let consumes more cpu and ram",
           "isAns": false
         }
       ]
     },
     {
       "id": 1003,
-      "quename": "What is my hometown",
+      "quename": "What is typescript?",
       "options": [
         {
           "id": 109,
           "queid": 1003,
-          "ansopt": "Durgapur",
+          "ansopt": "A language based on javascript",
           "isAns": true
         },
         {
           "id": 110,
           "queid": 1003,
-          "ansopt": "Chandrapur",
+          "ansopt": "script that runs on browser",
           "isAns": false
         },
         {
           "id": 111,
           "queid": 1003,
-          "ansopt": "Nagpur",
+          "ansopt": "a datatype collection of javascript",
           "isAns": false
         },
         {
           "id": 112,
           "queid": 1003,
-          "ansopt": "Amravati",
+          "ansopt": "none of the above",
+          "isAns": false
+        }
+      ]
+    },
+
+    {
+      "id": 1004,
+      "quename": "Which of the following is right syntax for arrow function?",
+      "options": [
+        {
+          "id": 209,
+          "queid": 1004,
+          "ansopt": "a -> { return b; }",
+          "isAns": false
+        },
+        {
+          "id": 210,
+          "queid": 1004,
+          "ansopt": "x <= x + y;",
+          "isAns": false
+        },
+        {
+          "id": 211,
+          "queid": 1004,
+          "ansopt": "x <- x + 5;",
+          "isAns": false
+        },
+        {
+          "id": 212,
+          "queid": 1004,
+          "ansopt": "x => x + 5;",
+          "isAns": true
+        }
+      ]
+    },
+
+    {
+      "id": 1005,
+      "quename": "Which new ES6 syntax helps with formatting output text - mixing variables with string literals, for example.",
+      "options": [
+        {
+          "id": 309,
+          "queid": 1005,
+          "ansopt": "Generator Functions",
+          "isAns": false
+        },
+        {
+          "id": 310,
+          "queid": 1005,
+          "ansopt": "Arrow functions",
+          "isAns": false
+        },
+        {
+          "id": 311,
+          "queid": 1005,
+          "ansopt": "Template functions",
+          "isAns": true
+        },
+        {
+          "id": 312,
+          "queid": 1005,
+          "ansopt": "Set data structure",
           "isAns": false
         }
       ]
